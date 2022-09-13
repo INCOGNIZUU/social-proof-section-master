@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+body {
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+body #desktopTop,
+body #desktopBottom {
+  display: none;
+}
+body #mobileTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body #mobileBottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media (min-width: 1440px) {
+  body #mobileTop,
+body #mobileBottom {
+    display: none;
+  }
+  body #desktopTop,
+body #desktopBottom {
+    display: inline;
+  }
+  body #desktopTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  body #desktopBottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+body .container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1440px) {
+  body .container {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+body .container header {
+  text-align: center;
+}
+body .container header h1 {
+  color: hsl(300deg, 43%, 22%);
+}
+body .container header p {
+  color: hsl(303deg, 10%, 53%);
+}
+@media (min-width: 1440px) {
+  body .container header {
+    width: 45%;
+    text-align: left;
+  }
+  body .container header h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  body .container header p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
+body .container main div {
+  background-color: hsl(300deg, 24%, 96%);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+}
+body .container main div p {
+  margin: 0;
+  color: hsl(300deg, 43%, 22%);
+  font-weight: 500;
+}
+@media (min-width: 1440px) {
+  body .container main {
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  body .container main div {
+    width: 60%;
+    position: relative;
+  }
+  body .container main #rate1 {
+    margin-right: 100px;
+  }
+  body .container main #rate2 {
+    margin-right: 50px;
+  }
+}
+body .container footer div {
+  background-color: hsl(300deg, 43%, 22%);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+}
+body .container footer div p {
+  color: hsl(0deg, 0%, 100%);
+}
+body .container footer div section {
+  display: flex;
+}
+body .container footer div section div {
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+}
+body .container footer div section h2 {
+  margin: 0;
+  color: hsl(0deg, 0%, 100%);
+}
+body .container footer div section h3 {
+  color: hsl(333deg, 80%, 67%);
+  margin: 0;
+}
+body .container footer div section .imageContainer {
+  margin: 0;
+  width: 60px;
+}
+body .container footer div section .imageContainer img {
+  width: 100%;
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  body .container footer {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+  }
+  body .container footer div {
+    padding: 40px;
+    height: auto;
+  }
+  body .container footer div p {
+    font-size: 1.2rem;
+  }
+  body .container footer div:nth-child(1) {
+    align-self: flex-start;
+  }
+  body .container footer div:nth-child(2) {
+    align-self: center;
+  }
+  body .container footer div:nth-child(3) {
+    margin-top: 100px;
+    align-self: flex-end;
+  }
+}/*# sourceMappingURL=style.css.map */
